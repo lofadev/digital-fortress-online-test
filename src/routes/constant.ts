@@ -1,3 +1,4 @@
+import AuthLayout from '~/layouts/auth';
 import Login from '~/pages/auth/login';
 import Register from '~/pages/auth/register';
 import Home from '~/pages/home';
@@ -21,10 +22,12 @@ export const PUBLIC_ROUTES: TRoute[] = [
   {
     path: ROUTER_PATH.AUTH.LOGIN,
     component: Login,
+    layout: AuthLayout,
   },
   {
     path: ROUTER_PATH.AUTH.REGISTER,
     component: Register,
+    layout: AuthLayout,
   },
 ];
 

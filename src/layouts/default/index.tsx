@@ -1,14 +1,17 @@
 import { PropsWithChildren } from 'react';
-import { Footer, Header } from '~/components';
-import { MainStyled } from './styled';
+import { Header } from '~/components';
+import Sidebar from '~/components/sidebar';
+import { MainStyled, WrapperStyled } from './styled';
 
 const DefaultLayout: React.FC<PropsWithChildren> = ({ children }) => {
   return (
-    <>
-      <Header />
-      <MainStyled>{children}</MainStyled>
-      <Footer />
-    </>
+    <WrapperStyled>
+      <Sidebar />
+      <MainStyled>
+        <Header />
+        {children}
+      </MainStyled>
+    </WrapperStyled>
   );
 };
 

@@ -1,24 +1,30 @@
 const lightTheme = {
-  primary: '#13C4CE',
+  primary: '#B6F09C',
   secondary: '#3374CD',
   white: '#fff',
-  lightGray: '#dddddd',
+  lightGray: '##CDCECF',
   transparent: 'transparent',
+  black: '#0D0F10',
+  lightBlack: '#131619',
+  red: '#FE5A5A',
 
-  textPrimary: '#3F4F5F',
+  textPrimary: '#CDCECF',
   textDanger: '#F2596B',
 };
 
 export type Theme = typeof lightTheme;
 
 const darkTheme: Theme = {
-  primary: '#13C4CE',
+  primary: '#B6F09C',
   secondary: '#3374CD',
   white: '#fff',
-  lightGray: '#dddddd',
+  lightGray: '##CDCECF',
   transparent: 'transparent',
+  black: '#0D0F10',
+  lightBlack: '#131619',
+  red: '#FE5A5A',
 
-  textPrimary: '#3F4F5F',
+  textPrimary: '#CDCECF',
   textDanger: '#F2596B',
 };
 
