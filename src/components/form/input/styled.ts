@@ -17,6 +17,10 @@ export const InputStyled = styled(Input)`
     border-color: ${({ theme }) => theme.primary};
     box-shadow: 0 0 0 4px rgba(132, 220, 245, 0.24);
   }
+
+  .ant-select-selection-placeholder {
+    color: ${({ theme }) => theme.textPrimary} !important;
+  }
 `;
 
 export const LabelStyled = styled.label`

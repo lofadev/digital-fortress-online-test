@@ -12,3 +12,7 @@ export const HeaderStyled = styled.header`
 export const HeaderSearchStyled = styled.div``;
 
 export const HeaderRightStyled = styled.div``;
+
+export const AvatarStyled = styled.img`
+  border-radius: 100rem;
+`;

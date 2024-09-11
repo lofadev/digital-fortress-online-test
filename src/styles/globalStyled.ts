@@ -59,6 +59,20 @@ const GlobalStyled = createGlobalStyle`
     height: 100%;
   }
   
+  .ant-table-container {
+    background-color: ${({ theme }) => theme.black};
+    color: ${({ theme }) => theme.textPrimary};
+  }
+
+  .ant-table-wrapper .ant-table-thead>tr>th {
+    padding: 10px;
+    background-color: ${({ theme }) => theme.black};
+    color: ${({ theme }) => theme.textPrimary};
+  }
+
+  .ant-table-cell {
+    padding: 12px !important;
+  }
 `;
 
 export default GlobalStyled;
