@@ -1,6 +1,5 @@
 import AuthLayout from '~/layouts/auth';
-import Login from '~/pages/auth/login';
-import Register from '~/pages/auth/register';
+import Login from '~/pages/auth/signin';
 import Home from '~/pages/home';
 import NotFound from '~/pages/not-found';
 import { TRoute } from '~/types/route';
@@ -8,8 +7,7 @@ import { TRoute } from '~/types/route';
 export const ROUTER_PATH = {
   HOME: '/',
   AUTH: {
-    LOGIN: '/login',
-    REGISTER: '/register',
+    LOGIN: '/sign-in',
   },
   NOTFOUND: '*',
 };
@@ -22,11 +20,6 @@ export const PUBLIC_ROUTES: TRoute[] = [
   {
     path: ROUTER_PATH.AUTH.LOGIN,
     component: Login,
-    layout: AuthLayout,
-  },
-  {
-    path: ROUTER_PATH.AUTH.REGISTER,
-    component: Register,
     layout: AuthLayout,
   },
 ];

@@ -9,6 +9,7 @@ const lightTheme = {
   red: '#FE5A5A',
 
   textPrimary: '#CDCECF',
+  textSecondary: '#6F767E',
   textDanger: '#F2596B',
 };
 
@@ -25,6 +26,7 @@ const darkTheme: Theme = {
   red: '#FE5A5A',
 
   textPrimary: '#CDCECF',
+  textSecondary: '#6F767E',
   textDanger: '#F2596B',
 };
 

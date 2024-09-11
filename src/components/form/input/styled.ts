@@ -2,18 +2,20 @@ import { Input } from 'antd';
 import styled from 'styled-components';
 
 export const InputStyled = styled(Input)`
-  padding: 0 14px;
+  padding: 12px 16px;
   height: 40px;
-  border: 1px solid ${({ theme }) => theme.lightGray};
+  border: 1px solid transparent;
   font-size: 16px;
   color: ${({ theme }) => theme.textPrimary};
-  border-radius: 4px;
+  border-radius: 12px;
+  background-color: ${({ theme }) => theme.lightBlack};
   transition: all 0.2s linear;
 
-  :focus,
-  :hover {
-    border-color: ${({ theme }) => theme.textPrimary};
-    box-shadow: 0 0 0 2px rgba(106, 152, 60, 0.1);
+  &.ant-input-outlined:focus,
+  &.ant-input-outlined:hover {
+    background-color: ${({ theme }) => theme.lightBlack} !important;
+    border-color: ${({ theme }) => theme.primary};
+    box-shadow: 0 0 0 4px rgba(132, 220, 245, 0.24);
   }
 `;
 
