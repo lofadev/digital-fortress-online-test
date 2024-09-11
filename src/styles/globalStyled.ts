@@ -52,6 +52,10 @@ const GlobalStyled = createGlobalStyle`
     line-height: 1;
     position: relative;
   }
+
+  #root {
+    height: 100%;
+  }
   
 `;
 
