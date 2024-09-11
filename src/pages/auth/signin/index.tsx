@@ -6,18 +6,18 @@ import FieldPassword from '~/components/form/password';
 import LinkPrimary from '~/components/link-primary';
 import {
   ButtonStyled,
+  CMOStyled,
   DescStyled,
   FormActionsStyled,
   FormGroupStyled,
   FormMainStyled,
-  ImgStyled,
   InfoStyled,
   LoginStyled,
   SignUpStyled,
+  SubTitleStyled,
   TitleHeadStyled,
   WrapperStyled,
 } from './styled';
-import { SignInBackground } from '~/assets';
 
 interface IFormData {
   email: string;
@@ -69,7 +69,11 @@ const SignIn = () => {
         </FormMainStyled>
       </LoginStyled>
       <InfoStyled>
-        <ImgStyled src={SignInBackground} alt="" />
+        <h2>Digital Fortress has been a game-changer for our content creation process.</h2>
+        <h2>The AI-powered tools are incredibly user-friendly and have saved us countless hours of work.</h2>
+
+        <SubTitleStyled>Lily Alisson</SubTitleStyled>
+        <CMOStyled>CMO at Digital Fortress</CMOStyled>
       </InfoStyled>
     </WrapperStyled>
   );

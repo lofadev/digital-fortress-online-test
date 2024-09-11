@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { SignInBackground } from '~/assets';
 import Button from '~/components/button/Button';
 
 export const WrapperStyled = styled.div`
@@ -8,7 +9,17 @@ export const WrapperStyled = styled.div`
 `;
 
 export const InfoStyled = styled.div`
-  background: #ccc;
+  background: url(${SignInBackground});
+  padding: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  & > h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 56px;
+  }
 `;
 
 export const LoginStyled = styled.div`
@@ -65,4 +76,14 @@ export const FormGroupStyled = styled.div`
 export const ImgStyled = styled.img`
   width: 100%;
   height: 100vh;
+`;
+
+export const CMOStyled = styled.span`
+  color: ${({ theme }) => theme.primary};
+`;
+
+export const SubTitleStyled = styled.h3`
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
 `;
