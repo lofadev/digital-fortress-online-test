@@ -1,6 +1,7 @@
 import { FormProvider, useForm } from 'react-hook-form';
+import { Avatar } from '~/assets';
 import FieldInput from '../form/input';
-import { HeaderRightStyled, HeaderSearchStyled, HeaderStyled } from './styled';
+import { AvatarStyled, HeaderRightStyled, HeaderSearchStyled, HeaderStyled } from './styled';
 
 interface IFormSearch {
   search: string;
@@ -26,7 +27,9 @@ const Header = () => {
         </FormProvider>
       </HeaderSearchStyled>
 
-      <HeaderRightStyled></HeaderRightStyled>
+      <HeaderRightStyled>
+        <AvatarStyled src={Avatar} />
+      </HeaderRightStyled>
     </HeaderStyled>
   );
 };
