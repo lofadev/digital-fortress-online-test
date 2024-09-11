@@ -15,6 +15,9 @@ const Sidebar = () => {
             <LinkStyled to={item.to}>{item.title}</LinkStyled>
           </MenuItemStyled>
         ))}
+        <MenuItemStyled>
+          <LinkStyled to={'/sign-in'}>Navigate to Sign in</LinkStyled>
+        </MenuItemStyled>
       </MenuWrapperStyled>
     </WrapperStyled>
   );
