@@ -47,10 +47,12 @@ const GlobalStyled = createGlobalStyle`
 
   body {
     min-height: 100vh;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1;
     position: relative;
+    color: ${({ theme }) => theme.textPrimary};
+    font-family: "Plus Jakarta Sans", sans-serif;
   }
 
   #root {
