@@ -1,11 +1,11 @@
 import AuthLayout from '~/layouts/auth';
 import Login from '~/pages/auth/signin';
-import Home from '~/pages/home';
+import Dashboard from '~/pages/dashboard';
 import NotFound from '~/pages/not-found';
 import { TRoute } from '~/types/route';
 
 export const ROUTER_PATH = {
-  HOME: '/',
+  DASHBOARD: '/',
   AUTH: {
     LOGIN: '/sign-in',
   },
@@ -14,8 +14,8 @@ export const ROUTER_PATH = {
 
 export const PUBLIC_ROUTES: TRoute[] = [
   {
-    path: ROUTER_PATH.HOME,
-    component: Home,
+    path: ROUTER_PATH.DASHBOARD,
+    component: Dashboard,
   },
   {
     path: ROUTER_PATH.AUTH.LOGIN,
